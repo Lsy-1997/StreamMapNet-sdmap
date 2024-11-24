@@ -146,7 +146,7 @@ class StreamMapNet(BaseMapper):
         
         return fused_feats
 
-    def forward_train(self, img, vectors, points=None, img_metas=None, **kwargs):
+    def forward_train(self, img, vectors, osm_masks, points=None, img_metas=None, **kwargs):
         '''
         Args:
             img: torch.Tensor of shape [B, N, 3, H, W]
